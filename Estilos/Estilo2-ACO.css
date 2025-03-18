@@ -1,0 +1,33 @@
+
+body.ImgFondo {
+	
+	background-image: url("../Imagenes/Fondo.jpg");
+	background-size:cover;
+}
+div.Div1 { 
+	position: absolute; 
+	border: 20px solid Blue;
+	background-image: url("../Imagenes/Fondo2.gif");
+	width: 90%; 
+	height: 400px;
+	text-align: center; 
+	color: white; 
+	font-size: 25;  
+	font-style: Italic;
+}
+a {
+	color: white;
+}
+a.Tabla {
+	color: red;
+}
+th.Color1 {
+	color: white;
+	Font-style: bold;	
+	
+}
+h1.Color2 {
+	color: white; 
+	width: "40%";
+	text-align: right
+}

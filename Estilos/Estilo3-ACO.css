@@ -1,0 +1,190 @@
+body.Color1 {
+	background-image: url("../Imagenes/Fondo2.gif");	
+}
+body.Color2 {
+	background-color: Orchid;	
+}
+body.Color3 {
+	background-color: MediumSlateBlue;	
+}
+body.Color4 {
+	background-color: DarkCyan;	
+}
+body.Color5 {
+	background-color: PaleTurquoise;	
+}
+body.Color6 {
+	background-color: LightSteelBlue;	
+}
+body.Color7 {
+	background-color: Tan;	
+}
+body.Color8 {
+	background-color: Khaki;	
+}
+
+hr{
+animation: cambiarColor 3s infinite; /* Aplica la animación */	
+border: 5px solid red; /* Tamaño inicial del borde */
+}
+.container {
+            display: flex;
+            align-items: center;
+        }
+.container img {
+            margin-left: 20px; /* Espacio entre texto e imagen */
+        }
+		
+@keyframes aparecer {
+            from {
+                opacity: 0; /* Comienza invisible */
+                transform: translateY(20px); /* Se mueve hacia arriba */
+            }
+to {
+                opacity: 1; /* Totalmente visible */
+                transform: translateY(0); /* En su posición original */
+            }
+        }
+
+        /* Estilo para la imagen */
+img {
+            animation: aparecer 2s ease-out; /* Aparece en 2 segundos */
+        }
+		
+h1.Titulo {
+	text-align: center; /* Centra horizontalmente */
+}
+
+@keyframes cambiarColor {
+	0% { border-color: red; }
+	25% { border-color: orange; }
+	50% { border-color: yellow; }
+	75% { border-color: green; }
+	100% { border-color: blue; }
+}
+table {
+	width: 70%; /* Ancho de la tabla */
+	margin: 20px auto; /* Centrar la tabla */
+	animation: cambiarColor 3s infinite; /* Aplica la animación */
+	border: 10px solid red; /* Tamaño inicial del borde */
+}
+th, td {
+	border: 1px solid #000; /* Bordes internos */
+	padding: 20px; /* Espaciado interno */
+	text-align: center; /* Alineación del texto */
+}
+th {
+	background-color: #f2f2f2; /* Fondo gris claro para los encabezados */
+}
+tr:nth-child(even) {
+	background-color: #f9f9f9; /* Alternar color para filas pares */
+}
+tr:nth-child(odd) {
+	background-color: #ffffff; /* Fondo blanco para filas impares */
+	}
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+
+.containerC {
+            position: relative;
+            width: 60%; 
+            margin: 50px auto; 
+            padding: 20px;
+			text-align: center;
+            font-size: 18px;
+        }
+
+       
+.circulo {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%; 
+            background-color: red; 
+            position: absolute;
+            animation: moverEsquinas 4s infinite; 
+        }
+
+        
+@keyframes moverEsquinas {
+0% {
+                top: 0; /* Esquina superior izquierda */
+                left: 0;
+            }
+25% {
+                top: 0; /* Esquina superior derecha */
+                left: 100%;
+                transform: translateX(-100%);
+            }
+50% {
+                top: 100%; /* Esquina inferior derecha */
+                left: 100%;
+                transform: translate(-100%, -100%);
+            }
+75% {
+                top: 100%; /* Esquina inferior izquierda */
+                left: 0;
+                transform: translateY(-100%);
+            }
+100% {
+                top: 0; /* Vuelve a la esquina superior izquierda */
+                left: 0;
+                transform: translate(0, 0);
+            }
+        }
+		
+		
+.heart-containerC {
+            position: absolute;
+            left: 50px;  /* Ajusta la distancia desde la izquierda */
+            top: 200px;  /* Ajusta la distancia desde la parte superior */
+        }
+
+        /* Corazón */
+.heart {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+            transform: rotate(-45deg); /* Rotar para darle forma */
+            animation: crecerReducir 2s infinite; /* Animación continua */
+        }
+
+        /* Parte superior izquierda del corazón */
+.heart::before,
+.heart::after {
+            content: '';
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%; /* Forma redondeada */
+            position: absolute;
+        }
+
+.heart::before {
+            top: -25px;
+            left: 0;
+        }
+
+.heart::after {
+            top: 0;
+            left: 25px;
+        }
+
+        /* Animación para hacer crecer y reducir el corazón */
+@keyframes crecerReducir {
+            0%, 100% {
+                transform: scale(1) rotate(-45deg); /* Tamaño normal */
+            }
+            50% {
+                transform: scale(1.2) rotate(-45deg); /* Tamaño aumentado */
+            }
+        }
+
+        /* Estilo del contenedor del texto */
+.containerA {
+            padding-left: 70px; /* Añadir espacio a la izquierda para el corazón */
+            font-size: 20px;
+        }
